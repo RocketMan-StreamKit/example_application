@@ -1,0 +1,20 @@
+{
+  "name": {
+    "en": "Example Application",
+    "ru": "Пример приложения",
+    "uk": "Приклад додатку"
+  },
+  "description": {
+    "en": "Demo application with settings and worker API.",
+    "ru": "Демо-приложение с настройками и API воркера.",
+    "uk": "Демо-додаток з налаштуваннями та API воркера."
+  },
+  "type": "application",
+  "version": "1.0.0",
+  "author": "StreamKit+",
+  "icon": "logo.svg",
+  "web": "index.html",
+  "web_type": "application",
+  "web_contents": ["style.css", "main.js", "logo.svg"],
+  "permissions": ["WEB_CONTENT", "WEB_END_POINTS"]
+}

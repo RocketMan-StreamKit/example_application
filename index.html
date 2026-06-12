@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app-header">
+        <img class="app-logo" src="logo.svg" alt="" width="40" height="40" />
+        <div>
+          <h1 id="title" class="app-title">Example application</h1>
+          <p id="subtitle" class="app-subtitle">Loading settings…</p>
+        </div>
+      </header>
+
+      <section class="app-card">
+        <div class="app-stat">
+          <span class="app-stat-label">Random value</span>
+          <span id="random-value" class="app-stat-value">—</span>
+        </div>
+        <div class="app-stat">
+          <span class="app-stat-label">Clicks sent to worker</span>
+          <span id="click-count" class="app-stat-value">0</span>
+        </div>
+      </section>
+
+      <div class="app-actions">
+        <button id="increment-btn" type="button" class="app-btn">
+          +1 via POST
+        </button>
+        <button id="refresh-btn" type="button" class="app-btn app-btn-secondary">
+          Refresh now
+        </button>
+      </div>
+
+      <p id="status" class="app-status" aria-live="polite"></p>
+      <p id="timestamp" class="app-timestamp"></p>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
